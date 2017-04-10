@@ -118,11 +118,12 @@
 
   .callout {
     border-radius: 5px;
-    border: 1px solid black;
+    border: 2px solid black;
   }
 }
 
-.services {
+#services {
+  //background-color: #f0f8bd;
 
   .morgans-image {
     max-height: 200px;
@@ -134,8 +135,24 @@
   }
 }
 
-.philosophy {
+#philosophy {
+  //background-color: #e1f8c1;
+
   .callout {
     background-color: #e1f8c1
   }
+}
+
+#contact {
+
+  .callout {
+    background-color: #e9e9e9
+  }
+
+
+}
+
+footer {
+  padding: 0 20px;
+  text-align: right;
 }

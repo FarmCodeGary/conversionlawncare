@@ -11,14 +11,15 @@
     <div class="jumbotron">
       <div class="top-bar">
         <div class="top-bar-left">
-          <ul class="vertical medium-horizontal menu">
+          <ul class="vertical large-horizontal menu">
             <li><img class="logo centered-image" src="images/conversion-logo-small.png"></li>
           </ul>
         </div>
         <div class="top-bar-right">
-          <ul class="vertical medium-horizontal menu right-menu">
-            <li><a href="#">OUR SERVICES</a></li>
-            <li><a href="#">OUR PHILOSOPHY</a></li>
+          <ul class="vertical large-horizontal menu right-menu" data-magellan>
+            <li><a href="#services">OUR SERVICES</a></li>
+            <li><a href="#philosophy">OUR PHILOSOPHY</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
           </ul>
         </div>
       </div>
@@ -44,7 +45,8 @@
         </div>
       </div>
     </div>
-    <section class="section services">
+
+    <section class="section" id="services" data-magellan-target="services">
       <h2>OUR SERVICES</h2>
       <div class="row">
         <div class="medium-4 columns">
@@ -66,7 +68,6 @@
               <li>Organic weed control</li>
               <li>Additional organic fertilization applications</li>
               <li>Pruning</li>
-              <li>Spring bark/mulch installation</li>
               <li>Fall leaf clean ups</li>
               <li>Repair work/compost &amp; seeding</li>
               <li>Compost bin installation</li>
@@ -83,7 +84,7 @@
         </div>
       </div>
     </section>
-    <section class="section philosophy">
+    <section class="section" id="philosophy" data-magellan-target="philosophy">
       <h2>OUR PHILOSOPHY</h2>
       <div class="row">
         <div class="medium-6 columns">
@@ -144,7 +145,7 @@
               to ask us questions about the business. We are happy to share
               information regarding our approach and products, and how we arrive at
               our pricing.  We believe in just compensation and place a high value on
-              the laborer (see James 5:4) but we do not believe in the many ways
+              the laborer (see <a href="https://www.biblegateway.com/passage/?search=James+5%3A4&version=ESV" target="_blank">James 5:4</a>) but we do not believe in the many ways
               businesses enrich themselves at the expense of the consumer or client. A
               brand new truck is in no way a requirement to run a landscaping or lawn
               care service business, so we will not inflate prices to pay for a
@@ -213,6 +214,25 @@
         </div>
       </div>
     </section>
+    <section class="section" id="contact" data-magellan-target="contact">
+      <h2>CONTACT US</h2>
+      <div class="row">
+        <div class="medium-6 columns medium-offset-3">
+          <div class="callout">
+            <h3>Contact us for a free estimate</h3>
+            <p>
+              Phone: <a href="tel:16163350797">616-335-0797</a><br/>
+              E-mail: <a href="mailto:info@conversionlawncare.com">info@conversionlawncare.com</a><br/>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr/>
+    <footer>
+      <p>© 2017 Conversion Lawn Care.</p>
+    </footer>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
