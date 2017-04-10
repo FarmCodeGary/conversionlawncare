@@ -38,7 +38,7 @@
               </div>
               <div class="medium-6 columns">
                 <h4>TAKE THE SURVEY</h4>
-                <p>Are you a good candidate for organic lawn care? <a href="#">Take the survey</a> and find out!</p>
+                <p>Are you a good candidate for organic lawn care? <a data-open="surveyModal">Take the survey</a> and find out!</p>
               </div>
             </div>
           </div>
@@ -231,6 +231,143 @@
     <footer>
       <p>© 2017 Conversion Lawn Care.</p>
     </footer>
+
+    <div class="reveal" id="surveyModal" data-reveal data-close-on-click="false">
+      <h3>TAKE THE SURVEY</h3>
+      <p>Are you a good candidate for Conversion Lawn Care Services? Take this short survey to find out.</p>
+      <p><strong>For each statement, choose how much you agree or disagree.</strong></p>
+      <form id="surveyForm">
+        <label class="positive">1. Safety is a priority of mine when deciding what products to purchase:
+          <select class="surveyQuestion" name="question1">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="positive">2. I am more of a leader than a follower:
+          <select class="surveyQuestion" name="question2">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="negative">3. I like my grass trimmed very short:
+          <select class="surveyQuestion" name="question3">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="negative">4. I believe maintaining my lawn is an important way to respect my neighbors:
+          <select class="surveyQuestion" name="question4">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="positive">5. I try to be proactive in regards to my family’s health:
+          <select class="surveyQuestion" name="question5">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="negative">6. The prospect of making a mistake worries me:
+          <select class="surveyQuestion" name="question6">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="negative">7. I have trouble saying no to my family because I don’t want to let them down:
+          <select class="surveyQuestion" name="question7">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="positive">8. I regularly purchase some organic food:
+          <select class="surveyQuestion" name="question8">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="negative">9. I have deviated little from my family of origin’s beliefs/culture:
+          <select class="surveyQuestion" name="question9">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <label class="positive">10. I can tolerate some "weeds" in my lawn:
+          <select class="surveyQuestion" name="question10">
+            <option value=""></option>
+            <option value="Strongly agree">Strongly agree</option>
+            <option value="Agree">Agree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Strongly disagree">Strongly disagree</option>
+          </select>
+        </label>
+        <p><strong>Thanks!</strong></p>
+        <label>Your name:
+          <input type="text">
+        </label>
+        <label>Your e-mail address:
+          <input type="email">
+        </label>
+        <button type="submit" class="button">See results</button>
+      </form>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="reveal" id="surveyModalYes" data-reveal data-close-on-click="false">
+      <h3>Great!</h3>
+      <p>You would make an excellent candidate for Conversion Lawn Care's services.</p>
+      <p>Contact us for a free estimate at <a href="tel:16163350797">616-335-0797</a> or <a href="mailto:info@conversionlawncare.com">info@conversionlawncare.com</a>!</p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="reveal" id="surveyModalNo" data-reveal data-close-on-click="false">
+      <h3>Sorry...</h3>
+      <p>It doesn't appear that Conversion Lawn Care's services are a good fit for your needs at this time.</p>
+      <p>Nonetheless, feel free to contact us at <a href="tel:16163350797">616-335-0797</a> or <a href="mailto:info@conversionlawncare.com">info@conversionlawncare.com</a> with any questions or comments.</p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
