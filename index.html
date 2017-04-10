@@ -238,7 +238,7 @@
       <p><strong>For each statement, choose how much you agree or disagree.</strong></p>
       <form id="surveyForm">
         <label class="positive">1. Safety is a priority of mine when deciding what products to purchase:
-          <select class="surveyQuestion" name="question1">
+          <select class="surveyQuestion" name="question1" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -248,7 +248,7 @@
           </select>
         </label>
         <label class="positive">2. I am more of a leader than a follower:
-          <select class="surveyQuestion" name="question2">
+          <select class="surveyQuestion" name="question2" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -258,7 +258,7 @@
           </select>
         </label>
         <label class="negative">3. I like my grass trimmed very short:
-          <select class="surveyQuestion" name="question3">
+          <select class="surveyQuestion" name="question3" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -268,7 +268,7 @@
           </select>
         </label>
         <label class="negative">4. I believe maintaining my lawn is an important way to respect my neighbors:
-          <select class="surveyQuestion" name="question4">
+          <select class="surveyQuestion" name="question4" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -278,7 +278,7 @@
           </select>
         </label>
         <label class="positive">5. I try to be proactive in regards to my family’s health:
-          <select class="surveyQuestion" name="question5">
+          <select class="surveyQuestion" name="question5" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -288,7 +288,7 @@
           </select>
         </label>
         <label class="negative">6. The prospect of making a mistake worries me:
-          <select class="surveyQuestion" name="question6">
+          <select class="surveyQuestion" name="question6" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -298,7 +298,7 @@
           </select>
         </label>
         <label class="negative">7. I have trouble saying no to my family because I don’t want to let them down:
-          <select class="surveyQuestion" name="question7">
+          <select class="surveyQuestion" name="question7" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -308,7 +308,7 @@
           </select>
         </label>
         <label class="positive">8. I regularly purchase some organic food:
-          <select class="surveyQuestion" name="question8">
+          <select class="surveyQuestion" name="question8" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -318,7 +318,7 @@
           </select>
         </label>
         <label class="negative">9. I have deviated little from my family of origin’s beliefs/culture:
-          <select class="surveyQuestion" name="question9">
+          <select class="surveyQuestion" name="question9" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -328,7 +328,7 @@
           </select>
         </label>
         <label class="positive">10. I can tolerate some "weeds" in my lawn:
-          <select class="surveyQuestion" name="question10">
+          <select class="surveyQuestion" name="question10" required>
             <option value=""></option>
             <option value="Strongly agree">Strongly agree</option>
             <option value="Agree">Agree</option>
@@ -339,10 +339,10 @@
         </label>
         <p><strong>Thanks!</strong></p>
         <label>Your name:
-          <input type="text">
+          <input type="text" name="name" id="nameField" required>
         </label>
         <label>Your e-mail address:
-          <input type="email">
+          <input type="email" name="email" id="emailField" required>
         </label>
         <button type="submit" class="button">See results</button>
       </form>
@@ -370,8 +370,15 @@
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_nALxm2kXFqRObDCTSnnxl");
+       })();
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 $(document).foundation();
+$('#surveyForm').validate();
 
 function surveyResultToScore(result) {
   switch(result) {
@@ -27,11 +28,32 @@ $("#surveyForm").submit(function(event) {
     var value = surveyResultToScore($(this).val());
     total -= value;
   });
+  var recommended;
   if (total > 0) {
+    recommended = 'recommended';
     $('#surveyModalYes').foundation('open');
   }
   else {
+    recommended = 'not recommended';
     $('#surveyModalNo').foundation('open');
   }
+
+  var answers = "";
+  $(".surveyQuestion").each(function() {
+    // Get the text of the label without the text of the <select> options.
+    var question = $(this).parent().clone().children().remove().end().text().trim();
+
+    answers += question + " " + $(this).val() + "<br/>";
+  });
+  console.log(answers);
+  var emailFields = {
+    "name": $('#nameField').val(),
+    "recommended": recommended,
+    "email": $('#emailField').val(),
+    "score": total,
+    "answers": answers
+  };
+  console.log(emailFields);
+  // emailjs.send("mailgun", "survey_response", emailFields)
   event.preventDefault();
 });

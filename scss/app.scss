@@ -65,7 +65,6 @@
 
   .logo {
     background-color: transparent;
-    border-radius: 5px;
     margin-bottom: 20px;
   }
 
@@ -157,11 +156,14 @@ footer {
   text-align: right;
 }
 
+.reveal {
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
 #surveyModal {
-  .negative {
+  .error {
     color: red;
-  }
-  .positive {
-    color: blue;
+    margin-bottom: 10px;
   }
 }
