@@ -99,21 +99,43 @@
 
 .jumbotron-detail {
   padding-top: 20px;
+
+  h4 {
+    font-weight: bold;
+  }
 }
 
 .section {
-  padding-top: 20px;
-  padding-bottom: 50px;
 
   h2 {
     text-align: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 1rem;
+  }
+
+  .callout {
+    border-radius: 5px;
+    border: 1px solid black;
   }
 }
 
 .services {
-  background-color: #ebebfc;
 
   .morgans-image {
     max-height: 200px;
+    border: 1px solid gray;
+  }
+
+  .callout {
+    background-color: #f0f8bd
+  }
+}
+
+.philosophy {
+  .callout {
+    background-color: #e1f8c1
   }
 }
