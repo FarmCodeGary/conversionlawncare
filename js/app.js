@@ -53,7 +53,7 @@ $("#surveyForm").submit(function(event) {
     "score": total,
     "answers": answers
   };
-  console.log(emailFields);
-  // emailjs.send("mailgun", "survey_response", emailFields)
+  // console.log(emailFields);
+  emailjs.send("mailgun", "survey_response", emailFields)
   event.preventDefault();
 });
