@@ -65,13 +65,12 @@
 
   .logo {
     background-color: transparent;
-    border-radius: 5px;
     margin-bottom: 20px;
   }
 
   .right-menu {
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid $black;
     border-radius: 5px;
     text-align: center;
   }
@@ -92,7 +91,7 @@
 }
 
 .jumbotron-callout {
-  border: 2px solid black;
+  border: 2px solid $black;
   border-radius: 5px;
   text-align: center;
 }
@@ -106,11 +105,10 @@
 }
 
 .section {
-
   h2 {
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: $black;
     font-weight: bold;
     padding: 10px 0;
     margin-bottom: 1rem;
@@ -118,13 +116,11 @@
 
   .callout {
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid $black;
   }
 }
 
 #services {
-  //background-color: #f0f8bd;
-
   .morgans-image {
     max-height: 200px;
     border: 1px solid gray;
@@ -136,23 +132,30 @@
 }
 
 #philosophy {
-  //background-color: #e1f8c1;
-
   .callout {
     background-color: #e1f8c1
   }
 }
 
 #contact {
-
   .callout {
     background-color: #e9e9e9
   }
-
-
 }
 
 footer {
   padding: 0 20px;
   text-align: right;
+}
+
+.reveal {
+  border-radius: 5px;
+  border: 2px solid $black;
+}
+
+#surveyModal {
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
 }
